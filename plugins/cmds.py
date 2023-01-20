@@ -76,7 +76,7 @@ async def rep_rename_call(c, m):
   thumb_image_path = Config.DOWNLOAD_LOCATION + "/" + str(m.from_user.id) + ".jpg"
   await c.send_message(
       Config.DB_CHANNEL,
-      f"""<b>Bᴏᴛ ɴᴀᴍᴇ :</b> [Rᴇɴᴀᴍᴇʀ Bᴏᴛ](https://t.me/AIOM_RENAMER_PRO_BOT)
+      f"""<b>Bᴏᴛ ɴᴀᴍᴇ :</b> [Rᴇɴᴀᴍᴇʀ Bᴏᴛ](https://t.me/+t1ko_FOJxhFiOThl)
 
 <b>Uꜱᴇʀ ɴᴀᴍᴇ :  [{m.from_user.first_name}](tg://user?id={m.from_user.id})</b>
 
@@ -113,7 +113,7 @@ async def rep_rename_call(c, m):
        chat_id=m.chat.id,
        document=new_file_name,
        thumb=thumb_image_path,
-       reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton(text='Aɪ๏ᴍ Bᴏᴛs', url="https://t.me/AIOM_Bots")]]),
+       reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton(text='TeleRoid Group', url="https://t.me/OwnYourBotz")]]),
        reply_to_message_id=m.reply_to_message.message_id,
        progress=progress_for_pyrogram,
        progress_args=(Scripted.UPLOAD_START, df, c_time))
@@ -140,7 +140,7 @@ async def start(bot, update):
              await bot.send_message(
                  chat_id=update.chat.id,
                  text=Scripted.JOIN_NOW_TEXT,
-                 reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton(text='Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url="https://t.me/AIOM_bots") ]])
+                 reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton(text='Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url="https://t.me/TeleRoidGroup") ]])
              )
              return        
     await bot.send_message(
